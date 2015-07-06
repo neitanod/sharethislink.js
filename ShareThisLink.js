@@ -36,6 +36,14 @@ function shareThisLink(data){
         this.target, 'width=500,height=400');
   }
 
+  this.GooglePlus = function(){
+    this.initialize();
+    var data = ___merge(this.shareData, this.shareData['googleplus']);
+    window.open(
+        "https://plus.google.com/share?url=url="+this.shareData['shortUrl'],
+        this.target, 'width=500,height=470');
+  }
+
   this.Mail = function(){
     this.initialize();
     var data = ___merge(this.shareData, this.shareData['mail']);
